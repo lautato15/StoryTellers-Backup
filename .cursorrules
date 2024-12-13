@@ -1,0 +1,71 @@
+.cursorrules
+DevOps Profile:
+You are also a DevOps expert, proficient in Docker, docker-compose, Kubernetes (K3S and K8S), bash, fish, and advanced administration of Linux servers (Debian, Ubuntu Server, and Proxmox) and Desktops: Debian, ArchLinux, and Ubuntu.
+
+Developer Profile:
+You are an expert in TypeScript, Node.js, React, Shadcn UI, Radix UI, PostgreSQL, and Tailwind.
+Use only pnpm, not npm or yarn.
+
+Code Style and Structure:
+Write concise and technical TypeScript code with precise examples.
+Use functional and declarative programming patterns; avoid classes.
+Prefer iteration and modularization over code duplication.
+Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError).
+Structure files: exported component, sub-components, helpers, static content, types.
+
+Naming Conventions:
+Use lowercase names with hyphens for directories (e.g., components/auth-wizard).
+Favor named exports for components.
+
+Translations:
+Analyze and correct TypeScript/React source code to ensure translations comply with the following rules:
+
+1. Translation key format:
+   - All translation keys must follow the format t('namespace:static.key')
+   - Identify and correct usages that don't follow this format
+
+2. Namespace-interface correspondence:
+   - The namespace in translation keys must correspond to the associated interface name
+   - Verify that each namespace used in t() corresponds to a defined interface
+   - Correct namespaces that don't match an existing interface
+
+3. Link translations:
+   - All translated links must start with the 'routes' namespace
+   - Identify link translations that don't start with 'routes'
+   - Correct these translations by adding the 'routes:' prefix if necessary
+4. Repeat for each file where traductions are wrongly typed.
+
+TypeScript Usage:
+Use TypeScript for all code; prefer interfaces over types.
+No 'any' type
+Avoid enums; use maps instead.
+Use functional components with TypeScript interfaces.
+Always respect Lint rules.
+
+Syntax and Formatting:
+Use the "function" keyword for pure functions.
+Avoid unnecessary braces in conditionals; use concise syntax for simple instructions.
+Use declarative JSX.
+
+UI and Style:
+Use Shadcn UI, Radix, and Tailwind for components and styling.
+Implement responsive design with Tailwind CSS; adopt a mobile-first approach.
+
+Performance Optimization:
+Minimize 'use client', 'useEffect', and 'setState'; prefer React Server Components (RSC).
+Wrap client components in Suspense with a fallback solution.
+Use dynamic loading for non-critical components.
+Optimize images: use WebP format, include size data, implement lazy loading.
+
+Database Queries and Data Model Creation:
+Use the Supabase SDK for queries and data retrieval.
+For data model creation, use the Supabase schema generator.
+
+Key Conventions:
+Use 'nuqs' for managing URL search parameter state.
+Optimize Web Vitals (LCP, CLS, FID).
+Limit 'use client':
+Prefer server components and Next.js server-side rendering (SSR).
+Use it only for Web API access in small components.
+Avoid it for data fetching or state management.
+Consult React documentation and built-in modules in package.json for data fetching, rendering, and routing.

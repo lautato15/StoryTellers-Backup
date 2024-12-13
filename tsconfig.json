@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", 
+    "rootDir": "./src",
+    "target": "esnext",  // O la versión que desees, por ejemplo ES6
+    "module": "esnext", // El módulo, por ejemplo ESNext o CommonJS
+    "jsx": "react-jsx", // Configura JSX correctamente
+    "baseUrl": "./src", // Establece la base para los alias
+    "paths": {
+      "@/*": ["./*"] // Mapea el alias "@" a la carpeta src
+    },
+    "esModuleInterop": true, // Para que funcione correctamente la importación de módulos
+    "skipLibCheck": true, // Para evitar comprobaciones de bibliotecas
+    "strict": true, // Configuración de chequeo estricto (opcional)
+    "moduleResolution": "node", // Usar la resolución de módulos de Node.js
+    "resolveJsonModule": true // Para poder importar archivos JSON (opcional)
+  },
+  "include": [
+    "src/**/*" // Incluye todos los archivos TypeScript dentro de src
+  ],
+  "exclude": [
+    "node_modules", // Excluye la carpeta node_modules
+    "build", // Si tienes una carpeta de construcción o dist, exclúyela
+    "dist" // Si generas una carpeta dist, exclúyela también
+  ]
+}
