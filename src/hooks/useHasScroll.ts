@@ -1,21 +1,32 @@
-import { useState, useEffect } from 'react';
 
-function useHasScroll(): boolean {
-  const [hasScroll, setHasScroll] = useState(false);
+import React from "react";
 
-  useEffect(function handleScrollEffect() {
-    function handleScroll() {
-      setHasScroll(window.scrollY > 0);
-    }
+const useHasScroll = () => {
+  const [hasScroll, setHasScrolled] = React.useState(false);
 
-    window.addEventListener('scroll', handleScroll);
+  React.useEffect(() => {
+    const handleScroll = () => {
+      // Verifica si el scroll vertical es mayor a 0
+      if (window.scrollY > 0) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    };
 
-    return function cleanup() {
-      window.removeEventListener('scroll', handleScroll);
+    // Agregar el listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Limpiar el listener al desmontar el componente
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+
     };
   }, []);
 
   return hasScroll;
-}
+
+};
+
 
 export default useHasScroll;

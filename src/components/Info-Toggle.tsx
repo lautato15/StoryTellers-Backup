@@ -12,7 +12,7 @@ export function InfoToggle() {
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
-        <Button variant="default" size="icon" className="p-6">
+        <Button variant="default" size="icon" className="p-2 md:p-6">
           Info
         </Button>
       </DropdownMenuTrigger>

@@ -8,12 +8,14 @@ interface StorytellerCardProps {
 export default function StorytellerCard({
   title,
   imageUrl,
+
 }: StorytellerCardProps): JSX.Element {
+
   return (
     <div
-      className="h-48 rounded-2xl border-2 border-white mt-8 bg-[url('/montevideo.jpeg')] bg-center object-cover max-w-2xl"
+      className="h-48 rounded-2xl border-2 border-white mt-8  bg-center object-cover max-w-2xl"
       style={{
-        backgroundImage: `url('/${imageUrl}')`,
+        backgroundImage: `url('${import.meta.env.VITE_API_IMAGES}${imageUrl}')`,
       }}
     >
       <div className="bg-black w-fit mx-4 mt-12 px-2 py-1 rounded-lg bg-opacity-60">

@@ -13,7 +13,7 @@ export function MenuToggle() {
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
-        <Button variant="default" size="icon" className="p-6">
+        <Button variant="default" size="icon" className=" text-sm p-2  md:p-6">
           Menu
         </Button>
       </DropdownMenuTrigger>

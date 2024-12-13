@@ -1,0 +1,57 @@
+GET https://api.storytellers.land/api/stories?populate=stages&populate=imageHeader
+Authorization: Bearer 89e70ef4d89f72c497c888c179ccd034751c9969406f237614e0b90074cce9a8e54429da0c9451cc5b4e19bc3db5952c341bd37c50deefc794bd05fb8b5aad6e7ddb0d06c930db1c4d1c3e4291fae3238462d4a13194e1a7bd7615dc254ea0f8f4ed48ed4c8a10205f2f9a09db8dd169874a0e2d7449b7daf76486ef9dfc8920
+Content-Type: application/json
+#########
+
+#########
+
+GET https://api.storytellers.land/api/stories?populate[stages][populate]=imageHeader&populate=imageHeader&locale=es
+Authorization: Bearer 89e70ef4d89f72c497c888c179ccd034751c9969406f237614e0b90074cce9a8e54429da0c9451cc5b4e19bc3db5952c341bd37c50deefc794bd05fb8b5aad6e7ddb0d06c930db1c4d1c3e4291fae3238462d4a13194e1a7bd7615dc254ea0f8f4ed48ed4c8a10205f2f9a09db8dd169874a0e2d7449b7daf76486ef9dfc8920
+Content-Type: application/json
+
+
+####
+# ESTA ES PARA HOMEvb
+GET https://api.storytellers.land/api/stories?fields[0]=title&fields[1]=header&populate[imageHeader][fields][0]=url&_locale=es&populate[stages][populate][imageHeader][fields][0]=url
+Authorization: Bearer 89e70ef4d89f72c497c888c179ccd034751c9969406f237614e0b90074cce9a8e54429da0c9451cc5b4e19bc3db5952c341bd37c50deefc794bd05fb8b5aad6e7ddb0d06c930db1c4d1c3e4291fae3238462d4a13194e1a7bd7615dc254ea0f8f4ed48ed4c8a10205f2f9a09db8dd169874a0e2d7449b7daf76486ef9dfc8920
+Content-Type: application/json
+
+
+####
+# ESTA ya tiene el icono del stage 
+GET https://api.storytellers.land/api/stories?fields[0]=title&fields[1]=header&populate[imageHeader][fields][0]=url&_locale=es&populate[stages][populate][imageHeader][fields][0]=url&populate[stages][populate][mapIcon][fields][0]=url
+Authorization: Bearer 89e70ef4d89f72c497c888c179ccd034751c9969406f237614e0b90074cce9a8e54429da0c9451cc5b4e19bc3db5952c341bd37c50deefc794bd05fb8b5aad6e7ddb0d06c930db1c4d1c3e4291fae3238462d4a13194e1a7bd7615dc254ea0f8f4ed48ed4c8a10205f2f9a09db8dd169874a0e2d7449b7daf76486ef9dfc8920
+Content-Type: application/json
+
+####
+# ESTA ya tiene el icono del stage 
+GET https://api.storytellers.land/api/stories?locale=es&fields[0]=title&fields[1]=header&populate[imageHeader][fields][0]=url&populate[stages][populate][imageHeader][fields][0]=url&populate[stages][populate][mapIcon][fields][0]=url&populate[stages][populate][image][fields][0]=url&populate[stages][populate][audio][fields][0]=url&populate[stages][populate][contents][populate][media][fields][0]=url
+Authorization: Bearer 89e70ef4d89f72c497c888c179ccd034751c9969406f237614e0b90074cce9a8e54429da0c9451cc5b4e19bc3db5952c341bd37c50deefc794bd05fb8b5aad6e7ddb0d06c930db1c4d1c3e4291fae3238462d4a13194e1a7bd7615dc254ea0f8f4ed48ed4c8a10205f2f9a09db8dd169874a0e2d7449b7daf76486ef9dfc8920
+Content-Type: application/json
+
+
+####
+# ESTA tiene q tener el contents con la imagen
+GET https://api.storytellers.land/api/stories?locale=es&populate[stages][populate][contents][populate][media][fields][0]=url
+Authorization: Bearer 89e70ef4d89f72c497c888c179ccd034751c9969406f237614e0b90074cce9a8e54429da0c9451cc5b4e19bc3db5952c341bd37c50deefc794bd05fb8b5aad6e7ddb0d06c930db1c4d1c3e4291fae3238462d4a13194e1a7bd7615dc254ea0f8f4ed48ed4c8a10205f2f9a09db8dd169874a0e2d7449b7daf76486ef9dfc8920
+Content-Type: application/json
+
+####
+# ESTA ya tiene contents y 
+GET https://api.storytellers.land/api/stories?locale=es&fields[0]=title&fields[1]=header&populate[imageHeader][fields][0]=url&populate[stages][populate][imageHeader][fields][0]=url&populate[stages][populate][mapIcon][fields][0]=url&populate[stages][populate][image][fields][0]=url&populate[stages][populate][audio][fields][0]=url&populate[stages][populate][contents][populate][media][fields][0]=url&?populate[0]=stages&populate[1]=stages.additional
+Authorization: Bearer 89e70ef4d89f72c497c888c179ccd034751c9969406f237614e0b90074cce9a8e54429da0c9451cc5b4e19bc3db5952c341bd37c50deefc794bd05fb8b5aad6e7ddb0d06c930db1c4d1c3e4291fae3238462d4a13194e1a7bd7615dc254ea0f8f4ed48ed4c8a10205f2f9a09db8dd169874a0e2d7449b7daf76486ef9dfc8920
+Content-Type: application/json
+
+
+####
+# ESTA tiene q tener el additional con la imagen
+GET https://api.storytellers.land/api/stories?locale=es&?populate[0]=stages&populate[1]=stages.additional
+Authorization: Bearer 89e70ef4d89f72c497c888c179ccd034751c9969406f237614e0b90074cce9a8e54429da0c9451cc5b4e19bc3db5952c341bd37c50deefc794bd05fb8b5aad6e7ddb0d06c930db1c4d1c3e4291fae3238462d4a13194e1a7bd7615dc254ea0f8f4ed48ed4c8a10205f2f9a09db8dd169874a0e2d7449b7daf76486ef9dfc8920
+Content-Type: application/json
+
+####
+#LA TOTAL Y VERDADERA TOTAL
+GET https://api.storytellers.land/api/stories?locale=es&fields[0]=title&fields[1]=header&populate[imageHeader][fields][0]=url&populate[stages][populate][imageHeader][fields][0]=url&populate[stages][populate][mapIcon][fields][0]=url&populate[stages][populate][image][fields][0]=url&populate[stages][populate][audio][fields][0]=url&populate[stages][populate][contents][populate][media][fields][0]=url&populate[stages][populate][additional][populate][audio][fields][0]=url
+Authorization: Bearer 89e70ef4d89f72c497c888c179ccd034751c9969406f237614e0b90074cce9a8e54429da0c9451cc5b4e19bc3db5952c341bd37c50deefc794bd05fb8b5aad6e7ddb0d06c930db1c4d1c3e4291fae3238462d4a13194e1a7bd7615dc254ea0f8f4ed48ed4c8a10205f2f9a09db8dd169874a0e2d7449b7daf76486ef9dfc8920
+Content-Type: application/json
+

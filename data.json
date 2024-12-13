@@ -1,32 +1,54 @@
 {
-  "muralla": {
-    "title": "Nuestra Señora de las Murallas",
-    "headlanding": {
-      "text": "Este territorio estuvo poblado durante siglos por indígenas minuanes-guenoas. Aunque con el tiempo llegaron charrúas y guaraníes.  En 1723, los españoles radicados en Buenos Aires recibieron aviso de la ocupación de la bahía de Montevideo por parte de los portugueses.   Sin resistencia se impusieron y recuperaron el territorio. En ese mismo año comenzaron a planificar la construcción de un gran muro alrededor de la península. La intención era fundar una ciudad y protegerla de posibles invasiones portuguesas, francesas o inglesas.   El ingeniero Domingo Petrarca fue el encargado de proyectar la ciudad y su defensa. Pero no fue hasta 1741, luego de finalizada la Fortaleza de la Ciudadela, que se comenzó con la construcción de la muralla.",
-      "img": "/muralla.png"
-    },
-    "story": [
-      {
-        "img": "/1.jpeg",
-        "title": "La Brecha - 1819",
-        "textPosition": "bottom",
-        "text": "En un diario anónimo publicado en 1819, un joven soldado INGLÉS da testimonio de la batalla contra los españoles que le permitió ocupar la ciudad de Montevideo."
-      },
-      {
-        "img": "/2.jpeg",
-        "textPosition": "top",
-        "text": "Luego de pasar la noche bombardeando el tramo más frágil los ingleses lograron abrir la brecha e ingresaron en la ciudad. Los que aún estaban en los barcos, luego de escuchar gritos y disparos, vieron la bandera británica izarse sobre los bastiones."
-      },
-      {
-        "img": "/3.jpeg",
-        "textPosition": "bottom",
-        "text": "Menciona que luego de la ocupación fue acogido durante su estadía en la casa de una joven viuda que vivía con su padre y había perdido a su marido en las batallas entre ingleses y españoles. En casa de María de Pavides pudo conocer a otros habitantes y vecinos de la ciudad de Montevideo ocupada por los británicos."
-      },
-      {
-        "img": "/4.jpeg",
-        "textPosition": "bottom",
-        "text": "En aquel momento, gran parte de los españoles que habitaban Montevideo huyeron luego de que le ciudad fuera tomada. Quedaron allí, según él, los más ignorantes y supersticiosos."
-      }
-    ]
+  "data": [
+    {
+      "id": 16,
+      "documentId": "ympvueowu307cxyo2d1ki1sj",
+      "title": "Muralla",
+      "createdAt": "2024-12-11T04:15:15.538Z",
+      "updatedAt": "2024-12-11T15:39:43.289Z",
+      "publishedAt": "2024-12-11T15:39:37.670Z",
+      "locale": "en",
+      "country": "uy",
+      "header": "Montevideo, at the beginning of the 19th century, had a population of 10,000 and low adobe houses with thatched roofs, later replaced by brick and tile constructions.  \nThis territory was initially inhabited by Minuane-Guenoa people and, later, by Charrúa and Guaraní communities. From them, we inherited the tradition of *mate*, vegetable cultivation, and the medicinal use of plants.  \n\nIn 1723, Zabala received notice of the Portuguese occupation of Montevideo and led a flotilla to expel them. Subsequently, the construction of a wall to protect the future city was planned.  \n\nIn 1741, the construction of the wall began under the direction of engineer Diego Cardoso. Delays due to a lack of resources, materials, and labor, coupled with corruption, weakened some sections of the wall.  \n\nIn 1829, with independence approaching, the General Assembly passed a law planning the wall's demolition as a rejection of colonial oppression. The demolition took several years.",
+      "stages": [
+        {
+          "id": 10,
+          "title": "The vaults",
+          "gps": [-34.9065, -56.199],
+          "position": 1,
+          "header": "Construction of the vaults began in 1794 and was completed in 1806.",
+          "description": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "At this moment, we are located on the northern shore of the Montevideo peninsula, facing the homonymous Bay."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "The vaults occupied the current area stretching from Bartolomé Mitre Street to Ituzaingó Street. Construction of the Vaults began in 1794 and was completed in 1806, consisting of 34 barracks that were part of Montevideo's city fortification system."
+                }
+              ]
+            }
+          ],
+          "url": null,
+          "qrcode": null
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
   }
 }
